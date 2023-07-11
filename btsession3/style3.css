@@ -1,0 +1,59 @@
+h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.img {
+    /* width: 60px; */
+    /* height: 40px; */
+    display: flex;
+    gap: 0 100px;
+    margin-bottom: 40px;
+
+}
+
+img {
+    display: "block";
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgb(132, 136, 205);
+    border-radius: 4px;
+}
+
+button {
+    color: #fff;
+    background-color: blue;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.number,
+.date,
+.pass {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#number,
+#date,
+#pass {
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid blue;
+}
+
+.pay {
+    display: flex;
+    justify-content: space-between;
+}
+
+#date,
+#pass {
+    width: 300px;
+}

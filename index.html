@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link rel="stylesheet" href="css/style.css"> <!--(../ để trở chuột về thư mục cha)-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--inline style-->
+    <h1 style="color: red; background-color: aqua;">Rikkei Academy</h1>
+    <h1>Rikkei Academy</h1>
+    <div>
+    <ul style="list-style-type: none;">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    </div>
+    <a href="">Link</a>
+    <a href="monmo.vn">Active</a>
+
+    <h3>CSS BASIC</h3>
+
+    <p> CSS</p>
+    <!--<div style="font-family: 'Times New Roman', Times, serif; font-weight: bold; color: brown; text-align: center; background-color: bisque; padding: 10px;">
+        <p>Module 1 - Web Front-end Fundamental</p>
+        <p> CSS Basic</p>
+    </div>-->
+    <p>Hiểu đơn giản <span>CSS Selector </span>là thứ cho phép bạn nhắm mục
+    tiêu tới các phần tử <span>HTML </span>để áp dụng các thuộc tính CSS
+    cho chúng.
+    <span>CSS Selector </span> giống như là đường dẫn, chỉ định để cho CSS
+    biết bạn đang muốn điều chỉnh, tạo kiểu cho phần tử HTML
+    nào vậy.</p>
+
+    <!--vẽ hình-->
+    <!--class dùng dấu '.', id dùng dấu '#'-->
+    <div id="box">
+        <div class="box-item">1</div>
+        <div class="box-item">2</div>
+        <div class="box-item">3</div>
+        <div class="box-item">4</div>
+    <section class="box-item">5</section>
+    </div>
+<div class=""></div>
+<div id=""></div>
+<div class="ten" id=""></div>
+
+    <!--internal style sheets-->
+    <style>
+        html{
+            font-size: 16px;
+        }
+        h1{
+            margin: 0;
+        }
+        li{
+            color: blue;
+            font-size: 2rem;
+            /* font-size: 40px;*/ 
+        }
+        a{
+            color:black;
+        }
+        div{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: brown;
+            background-color: bisque;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>
