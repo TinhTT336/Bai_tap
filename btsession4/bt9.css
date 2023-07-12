@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+i {
+    margin-left: 38px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+}
+
+.home {
+    border: 2px solid gray;
+    background-color: rgb(237, 229, 217);
+    width: 30%;
+    height: 50vh;
+    padding: 10px;
+    line-height: 30px;
+    position: relative;
+
+}
+
+.black {
+    width: 10vh;
+    height: 50vh;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 0;
+    transition: all 2s ease-in-out;
+    /* animation: move 2s ease-in-out infinite 1s; */
+}
+
+i :hover {
+    .black {
+        width: 30%
+    }
+}
+
+i:active {
+    background: scroll;
+}
+
+@keyframes move {
+    from {
+        left: 30%
+    }
+
+    to {
+        left: 0%
+    }
+}

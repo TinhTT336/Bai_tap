@@ -1,0 +1,40 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    font-size: 40px;
+    height: 300px
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+
+
+}
+
+#dot {
+    font-size: small;
+}
+
+#border {
+
+    background: radial-gradient(circle at top, red, purple, yellow);
+    width: 500px;
+    height: 400px;
+    position: absolute;
+
+}
+
+#box {
+    position: relative;
+    border-radius: 40px;
+    background: #ffffff;
+    margin: 20px 20px;
+    height: 340px;
+
+}

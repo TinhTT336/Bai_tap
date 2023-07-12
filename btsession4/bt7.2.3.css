@@ -1,0 +1,85 @@
+
+
+.two {
+    background: url("https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/05_2022/z3405713438374_e1bf72654070a03598b1390893fc52fa.jpg");
+    width: 500px;
+    height: 500px;
+    background-size: 500px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    position: relative;
+    opacity: 0.9;
+}
+.two-1 {
+    background-color: rgba(28, 28, 28, 0.66);
+    width: 100%;
+    height: 100%;
+}
+
+.two-2 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin: 20px 20px;
+}
+
+h3 {
+    color: rgba(255, 255, 255, 0.69);
+}
+
+button {
+    padding: 10px;
+    border-radius: 7px;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    margin: 20px 20px;
+}
+
+.two-3 {
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+
+.two-3 p {
+    border: 2px solid white;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    font-size: 2.4rem;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.two-4 {
+    background-color: red;
+}
+
+.three {
+    background: url("https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/05_2022/z3405713438374_e1bf72654070a03598b1390893fc52fa.jpg");
+    width: 500px;
+    height: 550px;
+    background-size: 500px;
+    box-sizing: border-box;
+    border: 2px solid  #fff;
+    position: relative;
+    color: #fff;
+}
+
+.gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(127, 127, 127, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 100%;
+}
+.gradient-text {
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}

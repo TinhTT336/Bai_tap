@@ -1,0 +1,15 @@
+* {
+
+    box-sizing: border-box;
+}
+
+ul {
+    background-color: blue;
+    width: 100px;
+ 
+    transition: all 2s ease-in-out;
+}
+
+i:active+ul {
+    transform: translateX(-90px);
+}

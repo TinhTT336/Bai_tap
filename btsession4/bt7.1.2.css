@@ -1,0 +1,14 @@
+.color{
+    width: 500px;
+    height: 300px;
+    color: #fff;
+    background-color: #514d4d;
+    text-align: center;
+    line-height: 300px;
+    font-size: 48px;
+    font-weight: bold;
+transition: background-color 1s ease-in-out;
+}
+.color:hover{
+    background-color: rgb(34, 73, 230);
+}
