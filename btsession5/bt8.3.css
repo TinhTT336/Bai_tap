@@ -1,0 +1,39 @@
+main {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem 0;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-size: 300%;
+}
+
+div {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 24rem;
+    height: 12rem;
+    box-shadow: 1px 1px lightgrey;
+
+}
+
+body {
+    background-color: rgb(238, 244, 245);
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 4.5rem;
+}

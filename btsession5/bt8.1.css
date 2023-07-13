@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: rgb(48, 78, 156);
+    color: #fff;
+    margin: 20px 40px;
+}
+
+.hearder1 button {
+    padding: 5px;
+    width: 20px;
+    height: 15px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 40px;
+    height: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 75vw;
+    border-bottom: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.share {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    background-color: rgb(235, 238, 241);
+    padding: 10px;
+    width: 93vw;
+
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(176, 180, 183);
+    margin: 0 40px;
+    padding: 15px;
+}
+
+button {
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+#addtask {
+    background-color: rgb(48, 78, 156);
+    color: #fff;
+}

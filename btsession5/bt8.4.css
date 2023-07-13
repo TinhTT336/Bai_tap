@@ -1,0 +1,79 @@
+.box1{
+    background: url("https://www.beaconjournal.com/gcdn/presto/2022/08/01/NABJ/4dca223e-283c-4be9-a7a8-a9635926ccea-balloon_ride_3.JPG?width=1200&disable=upscale&format=pjpg&auto=webp") no-repeat;
+    /* width: 500px;
+        height: 500px;
+        background-size: 500px; */
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        color: #fff;
+        
+}
+.box2{
+    background: url("https://assets.traveltriangle.com/blog/wp-content/uploads/2015/03/Best-Destinations-in-India-for-Hot-Air-Balloon-Ride.jpg");
+/* width: 500px;
+height: 500px;
+background-size: 500px; */
+box-sizing: border-box;
+border: 2px solid #fff;
+color: #fff;
+}
+.box3{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMD8va7oKgITkv35wLEHHtlnmJamXlsJsDy-HZn_eyl_q4_MEVwGesuHMRHftYelayOkE&usqp=CAU");
+    /* width: 500px;
+        height: 500px;
+        background-size: 500px; */
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        color: #fff;
+}
+.box4{
+    background: url("https://balloontaiwan.taitung.gov.tw/image/31245/1024x768");
+/* width: 500px;
+    height: 500px; */
+    /* background-size: 500px; */
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.box5{
+    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F39%2F2023%2F04%2F27%2Fnational-balloon-classic-indianola-FPN81KqH4tj8bUHdrhheGc.jpg&q=60");
+/* width: 500px;
+    height: 500px; */
+    /* background-size: 500px; */
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.box6{
+    background-color: brown;
+    /* width: 500px;
+        height: 500px; */
+        /* background-size: 500px; */
+        box-sizing: border-box;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 10px;
+}
+body{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 2rem;
+        margin-right: 2rem;
+        gap:0px;
+        justify-content: center;
+        align-self: center;
+        width:30vw ;
+        height: 70vh;
+
+}
+.box1{
+    grid-area: 1/1/2/3;
+}
+.box2{
+    grid-area: 2/1/5/2;
+}
+  /* .box6{
+    grid-area:4/2/6/3 ;
+} */
+
