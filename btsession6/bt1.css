@@ -268,8 +268,8 @@ nav {
 
 .product2 img {
     display: block;
-    width: 450px;
-    height: 360px;
+    width: 400px;
+    height: 330px;
 }
 
 .ourproduct1_2 {
@@ -309,7 +309,7 @@ p {
     display: flex;
     margin: 0 100px;
     padding: 80px;
-    gap: 850px;
+    gap: 500px;
 }
 
 .ourproduct21 {
@@ -328,24 +328,25 @@ p {
 .ourproduct2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
 }
 
 .ourproduct21 img {
     display: block;
     width: 88%;
-    height: 51%;
+    height: 50%;
 }
 
 .ourproduct22 img {
     display: block;
     width: 80%;
-    height: 88%;
+    height: 90%;
 }
 
 .ourproduct21 button {
     padding: 15px 16px;
-    margin-top: 60px;
-    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: #fff;
     background-color: #518581;
     border-radius: 4px;
