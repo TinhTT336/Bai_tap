@@ -6,36 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .amount,.from,.to,.convert{
+        .amount,
+        .from,
+        .to,
+        .convert {
             display: flex;
             flex-direction: column;
             align-items: center;
             /* padding: 10px; */
         }
-        form{
+
+        form {
             display: flex;
             justify-content: center;
             align-items: center;
             /* padding: 10px; */
             gap: 80px;
         }
-        input,select, button{
+
+        input,
+        select,
+        button {
             padding: 10px;
             border-radius: 5px;
         }
-        label{
+
+        label {
             font-weight: bold;
             padding: 10px;
         }
-        select{
+
+        select {
             width: 150px;
         }
-        button{
+
+        button {
             width: 100px;
             background-color: rgb(117, 89, 188);
             color: aliceblue;
         }
-        
     </style>
 </head>
 
@@ -48,35 +57,39 @@
             document.writeln("Điểm trung bình là:" + average);
         </script>
         </pre> -->
-        <form action="">
-            <div class="amount">
-                <label for="">Amount</label>
-                <input type="text" name="amount" id="amount">
-            </div>
-            <div class="from">
-                <label for="">From Currency</label>
-                <select name="from" id="from">
+    <!-- <form action="">
+        <div class="amount">
+            <label for="amount">Amount</label>
+            <input type="text" name="amount" id="amount" placeholder="Nhap vao so tien can doi">
+        </div>
+        <div class="from">
+            <label for="">From Currency</label>
+            <select name="from" id="from">
+                <option value="VND">USD</option>
+                <option value="USD">Viet Nam</option>
+            </select>
+        </div>
+        <div class="to">
+            <label for="">To Currency</label>
+            <select name="to" id="to">
                 <option value="VND">Viet Nam</option>
                 <option value="USD">USD</option>
-                </select>
-            </div>
-            <div class="to">
-                <label for="">To Currency</label>
-                <select name="to" id="to">
-                <option value="VND">Viet Nam</option>
-                <option value="USD">USD</option>
-                </select>
-            </div>
-            <div class="convert">
-                <label for=""></label>
-                <button type="button" onclick="showMessage();">Convert</button>
-            </div>
-        </form>
-        <script>
-            function showMessage(){
-                document.getElementById
-            }
-        </script>
+            </select>
+        </div>
+        <div class="convert">
+            <label for=""></label>
+            <button type="button" onclick="changeDollar();">Convert</button>
+            <p id="convert">0</p>
+        </div>
+    </form>
+    <script>
+        function changeDollar() {
+            const RATE = 23000;
+            let dollar = document.getElementById("amount").value;
+            let vnd = dollar * RATE;
+            document.getElementById("convert").innerHTML = "Số tiền đổi sang VND: " + vnd + " VND"
+        }
+    </script> -->
 </body>
 
 </html>

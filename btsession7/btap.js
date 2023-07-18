@@ -40,16 +40,13 @@
 // document.write("So lon nhat trong 3 so la: " + max);
 
 
-// let n = parseInt(prompt("Nhap so luong gia tri trong day so"));
-// let a1 = parseInt(prompt("Nhap a1"));
-// let a2 = parseInt(prompt("Nhap a2"));
-// let a3 = parseInt(prompt("Nhap a3"));
-// let an = parseInt(prompt("Nhap n"));
-// let max = a1;
-// if (max < a2) { max = a2 };
-// if (max < a3) { max = a3 };
-// if (max < an) { max = an };
-// document.write("So lon nhat trong day so la: " + max);
+let a = [2, 4, 8, 9, 3, 6, 11]
+let max = a[0];
+for (let i = 0; i < a.length; i++) {
+    if
+        (a(i) > [max]) { max = a[i] };
+}
+console.log(max);
 
 // console.log("Welcome to Rikkei Academy");
 // let age = prompt("Moi ban nhap so tuoi cua ban");
@@ -57,15 +54,17 @@
 // alert("Chao mung ban den voi hoc vien Rikkei Academy");
 // let result = confirm("Ban da du 18 tuoi");
 
-const RATE = 23000;
-let dollar = parseInt(amount);
-let vnd = dollar * RATE;
-document.write("Result:" + vnd + "VND");
-onclick = 'write("Ket qua la: "+vnd+ "VND")';
-
-   
 // document.write("Tao Button va Text bang Script<BR>");
 // document.write("<BR>");
 // document.write("<input type=button name=welcome value = 'Welcome' ");
 // document.write("onclick = 'alert ('Welcome to JavaScript');' > ");
 // document.write("<input type = text name = msg value = 'Welcome to'>");
+
+// let grade = parseInt(prompt("Nhap so diem cua ban"));
+// // let classification
+// if (grade => 74) { A };
+// if (60 <= grade < 75) { B };
+// if (45 <= grade < 60) { C };
+// if (35 <= grade < 60) { D };
+// if (grade < 35) { E };
+// document.write("Xep loai cua hoc vien la: " +)
