@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .amount,.from,.to,.convert{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* padding: 10px; */
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 10px; */
+            gap: 80px;
+        }
+        input,select, button{
+            padding: 10px;
+            border-radius: 5px;
+        }
+        label{
+            font-weight: bold;
+            padding: 10px;
+        }
+        select{
+            width: 150px;
+        }
+        button{
+            width: 100px;
+            background-color: rgb(117, 89, 188);
+            color: aliceblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <script src="/js/btap.js"></script>
+    <!-- <pre>
+        <script>
+            document.writeln("Điểm tổng 3 môn là:" + total);
+            document.writeln("Điểm trung bình là:" + average);
+        </script>
+        </pre> -->
+        <form action="">
+            <div class="amount">
+                <label for="">Amount</label>
+                <input type="text" name="amount" id="amount">
+            </div>
+            <div class="from">
+                <label for="">From Currency</label>
+                <select name="from" id="from">
+                <option value="VND">Viet Nam</option>
+                <option value="USD">USD</option>
+                </select>
+            </div>
+            <div class="to">
+                <label for="">To Currency</label>
+                <select name="to" id="to">
+                <option value="VND">Viet Nam</option>
+                <option value="USD">USD</option>
+                </select>
+            </div>
+            <div class="convert">
+                <label for=""></label>
+                <button type="button" onclick="showMessage();">Convert</button>
+            </div>
+        </form>
+        <script>
+            function showMessage(){
+                document.getElementById
+            }
+        </script>
+</body>
+
+</html>
