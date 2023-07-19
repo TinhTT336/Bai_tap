@@ -40,13 +40,12 @@
 // document.write("So lon nhat trong 3 so la: " + max);
 
 
-let a = [2, 4, 8, 9, 3, 6, 11]
-let max = a[0];
-for (let i = 0; i < a.length; i++) {
-    if
-        (a(i) > [max]) { max = a[i] };
-}
-console.log(max);
+// let a = [2, 4, 8, 9, 3, 6, 11]
+// let max = a[0];
+// for (let i = 0; i < a.length; i++) {
+//     if(a(i) > [max]) { max = a[i] };
+// }
+// console.log(max);
 
 // console.log("Welcome to Rikkei Academy");
 // let age = prompt("Moi ban nhap so tuoi cua ban");
@@ -61,10 +60,46 @@ console.log(max);
 // document.write("<input type = text name = msg value = 'Welcome to'>");
 
 // let grade = parseInt(prompt("Nhap so diem cua ban"));
-// // let classification
-// if (grade => 74) { A };
-// if (60 <= grade < 75) { B };
-// if (45 <= grade < 60) { C };
-// if (35 <= grade < 60) { D };
-// if (grade < 35) { E };
-// document.write("Xep loai cua hoc vien la: " +)
+// if (grade >= 75) {
+//     console.log('A');
+// }
+// else if (60 <= grade < 75) {
+//     console.log('B');
+// }
+// else if (45 <= grade < 60) {
+//     console.log('C');
+// }
+// else if (35 <= grade < 60) {
+//     console.log('D');
+// }
+// else if (grade < 35) {
+//     console.log('E');
+// }
+
+
+// let avg = parseInt(prompt("Nhap so diem cua ban"));
+// if (avg < 60) {
+//     document.write("Grade : F");
+// }
+// else if (avg < 70) {
+//     document.write("Grade : D");
+// }
+// else if (avg < 80) {
+//     document.write("Grade : C");
+// } else if (avg < 90) {
+//     document.write("Grade : B");
+// } else if (avg < 100) {
+//     document.write("Grade : A");
+// }
+
+//  Vẽ lược đồ giải thuật và mã giả y / c người dùng nhập vào 2 số,
+//     tính toán kết quả phép cộng 2 số và kiểm tra có nhỏ hơn 10 hay không,
+//     nếu không thỏa mãn yêu cầu người dùng nhập lại
+// let a = parseInt(prompt("Nhap so a"));
+// let b = parseInt(prompt("Nhap so b"));
+// let total = a + b;
+// // alert("Tong 2 so la: " + total);
+// if (total < 10) {
+//     alert("Tong 2 so nho hon 10");
+// } else { alert("Nhap lai 2 so a va b" )};
+
