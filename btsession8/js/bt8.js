@@ -1,19 +1,22 @@
-let a = +prompt("Nhap a");
-let b = +prompt("Nhap b");
+let a = +prompt("Moi ban nhap vao so a");
+let b = +prompt("Moi ban nhap vao so b");
 let calculator = prompt("Nhap vao cac phep tinh + , -, * ,/");
+let rs;
 switch (calculator) {
-    case (calculator = "+"):
-        alert(a + b);
+    case "+":
+        rs = a + b;
         break;
-    case (calculator = "-"):
-        alert(a - b);
+    case "-":
+        rs = a - b;
         break;
-    case (calculator = "*"):
-        alert(a * b);
+    case "*":
+        rs = a * b;
         break;
-    case (calculator = "/"):
-        alert(a / b);
-        break;
-    default:
-        alert("khong co phep tinh nay");
-}
+    case "/": {
+        if (b != 0) {
+            rs = a / b
+        } else {
+            alert("Khong thuc hien duoc phep tinh");
+        }
+    } break;
+} alert(`ket qua cua phep tinh tren: a ${calculator} b = ${rs}`);
