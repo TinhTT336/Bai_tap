@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to left, #8E0E00, #1F1C18);
+        }
+
+        .container {
+            height: 525px;
+            width: 360px;
+            margin: 100px auto;
+            background: #f7f7f7;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+
+        }
+
+        h1 {
+            background: #1F030C;
+            color: white;
+            margin: 0;
+            padding: 10px 100px;
+            /* text-transform: uppercase; */
+            font-size: 18px;
+            font-weight: normal;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        p {
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        form input {
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+
+        .bill input {
+            font-size: 14px;
+            color: red;
+            background-color: #f7f7f7;
+            width: 60%;
+            padding: 5px 5px 8px 8px;
+        }
+
+        .bill input :focus {
+            background: #fff;
+            border: 3px solid #2980b9;
+            outline: none;
+        }
+
+        .people input {
+            font-size: 14px;
+            color: red;
+            background-color: #f7f7f7;
+            width: 60%;
+            padding: 5px 5px 8px 8px;
+            margin-left: 20px;
+        }
+
+        select {
+            padding: 13px 13px 20px 20px;
+            margin-left: 20px;
+            font-size: 25px;
+        }
+
+        button {
+            text-transform: uppercase;
+            font-weight: bold;
+            display: block;
+            margin: 30px auto;
+            background: #AD133A;
+            border-radius: 5px;
+            width: 200px;
+            height: 50px;
+            font-size: 17px;
+            color: white;
+        }
+
+        button:hover {
+            background: #4c2827;
+            border-bottom-color: #111;
+        }
+
+        button:active {
+            position: relative;
+            top: 1px;
+        }
+
+        .totalTip {
+            font-size: 30px;
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>TIP CALCULATOR</h1>
+        </header>
+        <form action="">
+            <div class="bill">
+                <p>How much was your bill?</p>
+                <span>$</span>
+                <input type="text" name="" id="bill" placeholder="Bill Amount">
+            </div>
+            <div class="service">
+                <p>How was your service?</p>
+                <select name="" id="service">
+                    <option disabled selected value="0">-- Choose an Option --</option>
+                    <option value="0.3">30&#37; &#45; Outstanding</option>
+                    <option value="0.2">20&#37; &#45; Good</option>
+                    <option value="0.15">15&#37; &#45; It was OK</option>
+                    <option value="0.1">10&#37; &#45; Bad</option>
+                    <option value="0.05">5&#37; &#45; Terrible</option>
+                </select>
+            </div>
+            <div class="people">
+                <p>How many people are sharing the bill?</p>
+                <input type="text" name="" id="people" placeholder="Number of People">
+                <span>people</span>
+            </div>
+            <button type="button" id="calculate" onclick="calculateTip">CALCULATE!</button>
+        </form>
+        <div id="totalTip">
+            <p id="tip">0.00</p>
+            <p id="each">0.00</p>
+        </div>
+    </div>
+    <!-- <script src="/js/bt3.js"></script> -->
+    <script>
+        //calculate tip
+        function calculateTip() {
+            let bill = document.getElementById("bill").value;
+            let service = document.getElementById("service").value;
+            let people = document.getElementById("people").value;
+        }
+        if (bill === "" || service == 0) {
+            alert("Please enter values");
+            return;
+        }
+        if (people === "" || people <= 1) {
+            people = 1;
+            document.getElementById("each").style.display = "none";
+        } else {
+            // document.getElementById("each").style.display = "block";
+
+            //round to two decimal places
+            let total = (bill * service) / people;
+            //round to two decimal places
+            total = Math.round(total * 100) / 100;
+            total = total.toFixed(2);
+            document.getElementById("tip").innerHTML = "Tip: " + total;
+            // document.getElementById("calculate").onclick = function () {
+            //     calculateTip();
+            // }
+        }
+    </script>
+</body>
+
+</html>
