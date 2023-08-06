@@ -1,0 +1,52 @@
+.intro {
+    text-align: center;
+    font-family: Arial;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 14pt;
+}
+
+#image-gallery {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#current-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#image-thumbs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#image-thumbs::after {
+    content: ">>";
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+
+#image-thumbs::before {
+    content: "<<";
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    padding-right: 10px;
+}

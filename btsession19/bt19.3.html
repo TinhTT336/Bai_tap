@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bt3.css">
+</head>
+
+<body>
+    <!-- Tạo ra một đồng hồ số hiển thị thời gian: Giờ - Phút - Giây
+    
+    Yêu cầu đồng hồ chạy với thời gian thực
+    
+    Sau mỗi 5 phút sẽ bật một bài hát
+    
+    Sau mỗi 10 phút sẽ đổi ảnh nền -->
+
+    <div id="clock">
+        <p>Thời gian bây giờ là:</p>
+        <div id="clock1">
+            <div id="hour">
+                <p>00</p>
+                <p>Giờ</p>
+            </div>
+            <div id="minutes">
+                <p>00</p>
+                <p>Phút</p>
+            </div>
+            <div id="seconds">
+                <p>00</p>
+                <p>Giây</p>
+            </div>
+        </div>
+    </div>
+    <!-- <iframe  width="560" height="315" src="https://www.youtube.com/embed/lxmGUB5OfJk" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe> -->
+    <hr>
+    <br>
+
+    <!-- Bai 2: Tạo ra một đồng hồ số hiển thị thời gian: Giờ - Phút - Giây
+        // Đồng hồ đếm ngược trong 10 phút
+        // Sau mỗi 10 giây sẽ xuất hiện 1 con gà trên màn hình(kích thước to hoặc nhỏ)
+        // Nếu hover vào con gà sẽ xuất hiện viền xanh
+        // Nếu click vào con gà sẽ được 10 điểm -->
+    <div id="clock2">
+        <p> DRAFT <span>COUNTDOWN</span></p>
+        <div id="clock21">
+            <div id="hour2">
+                <p>HOURS</p>
+                <p>00</p>
+            </div>
+            <div id="minutes2">
+                <p>MINUTES</p>
+                <p>00</p>
+
+            </div>
+            <div id="seconds2">
+                <p>SECONDS</p>
+                <p>00</p>
+            </div>
+        </div>
+    </div>
+    <img src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Anh-ga-cute-hinh-nen-ga-cute.jpg" alt="">
+    <p>Grade: <span id="grade">0</span> </p>
+    <script src="js/bt3.js"></script>
+</body>
+
+</html>

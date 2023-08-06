@@ -1,0 +1,86 @@
+#two {
+    position: relative;
+    display: block;
+    height: 300px;
+}
+
+#two h2 {
+    padding-top: 20px;
+}
+
+#box {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    /* border: 1px solid black; */
+    visibility: hidden;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
+}
+
+#box button {
+    border: none;
+    background-color: #fff;
+}
+
+#three{
+    background-color: green;
+}
+#three1 div{
+    /* display: block; */
+height: 100px;
+width:100px;
+border: 1px solid black;
+}
+#three1{
+    display: flex;
+    padding-bottom: 20px;
+}
+#three1 :nth-child(1){
+    background-color: orange;
+}
+#three1 :nth-child(2) {
+    background-color:blue;
+}
+#three1 :nth-child(3) {
+    background-color: pink;
+}
+
+#four{
+    border: 1px solid gray;
+    text-align: center;
+    margin: 20px auto;
+    width: 50vw;
+    position: relative;
+}
+ #four #p2{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+#four span{
+    visibility: hidden;
+    background-color: rgba(9, 8, 8, 0.703);
+    padding: 5px;
+    color:#fff;
+    position: absolute;
+bottom: 40px;
+left: 110px;
+}
+
+/* #five{
+    background-color: black;
+    color: #fff;
+} */
+#five h2{
+    padding-top: 15px;
+}
+#five button{
+    /* background-color: #fff;
+    color:#000; */
+    border-radius: 5px;
+margin-bottom: 40px;
+}
