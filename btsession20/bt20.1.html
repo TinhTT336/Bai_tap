@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .title {
+            width: 70vw;
+            background-color: red;
+            color: #fff;
+            padding: 20px;
+
+        }
+
+        .title h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #title_input {
+            width: 65%;
+            padding: 10px;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid transparent;
+        }
+
+        .title button {
+            width: 30%;
+            background-color: lightgrey;
+            color: #000;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+
+        .content :nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        table {
+            width: 70vw;
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+
+        }
+
+        td,
+        th,
+        tr {
+            border: 1px solid black;
+            /* border-collapse: collapse; */
+        }
+
+        td {
+            width: 250px;
+            text-align: center;
+        }
+
+        #edit_info {
+            padding: 15px;
+            display: none;
+            border: 1px solid black;
+            background-color: aquamarine;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h2>My To Do List</h2>
+        <div action="">
+            <input type="text" name="" id="title_input" placeholder="Title">
+            <button onclick="addToDoList()">Add</button>
+        </div>
+    </div>
+    <div id="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Job</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="content-body">
+
+            </tbody>
+        </table>
+        <div id="edit_info">
+            <div class="input_edit">
+                <label for="category_id" class="form-label">ID</label>
+                <input type="text" class="form-control" id="id_edit" readonly>
+            </div>
+            <div class="input_edit">
+                <label for="category_name" class="form-label">Job</label>
+                <input type="text" class="form-control" id="name_edit">
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                    onclick="closex()">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                    onclick="updateToDoList()">UPDATE</button>
+            </div>
+        </div>
+
+        <!-- Modal Edit
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editModal">Edit Category</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="category_id" class="form-label">ID</label>
+                            <input type="text" class="form-control" id="id_edit" disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label for="category_name" class="form-label">Job</label>
+                            <input type="text" class="form-control" id="name_edit">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="updateToDoList()">UPDATE</button>
+                </div> -->
+
+        <script src="js/bt20.1.js"></script>
+</body>
+
+</html>
