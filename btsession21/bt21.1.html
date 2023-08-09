@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .register_form {
+            width: 40vw;
+            margin: 50px auto 100px;
+            border: 1px solid lightgrey;
+            box-shadow: 1px 1px 10px lightgrey;
+            padding: 30px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+
+        }
+
+        .content input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .content label {
+            text-align: left !important;
+            padding-bottom: 5px;
+        }
+
+        button {
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            background-color: #eee;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register_form">
+        <h2>Register_form</h2>
+        <form action="">
+            <div class="email content">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="password content">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="confirm_password content">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" name="confirmpassword" id="confirmpassword"
+                    placeholder="Enter your confirm password" required>
+            </div>
+            <p id="errMess"></p>
+            <button type="button" id="register" >Register</button>
+        </form>
+    </div>
+
+    <!-- <form method="post" action="#" name="register">
+        <p>
+            <label for="username">Tên đăng nhập(*)</label>
+            <input class="text" type="password" name="username" id="username" />
+        </p>
+        <p>
+            <label for="password">Password(*)</label>
+            <input class="text" type="password" name="password" id="password" />
+        </p>
+        <p>
+            <label for="confirm_pass">Nhập lại password(*)</label>
+            <input class="text" type="password" name="confirm_pass" id="confirm_pass" />
+        </p>
+        <p>
+            <label for="lastname">Họ của bạn(*)</label>
+            <input class="text" type="text" name="lastname" id="lastname" />
+        </p>
+        <p>
+            <label for="firstname">Tên của bạn(*)</label>
+            <input class="text" type="text" name="firstname" id="firstname" />
+        </p>
+        <p>
+            <label for="email">Email(*)</label>
+            <input class="text" type="text" name="email" id="email" />
+        </p>
+        <p>
+            <label for="phone">Số điện thoại(*)</label>
+            <input class="text" type="text" name="phone" id="phone" />
+        </p>
+    
+        <p>
+            <label id="bottom">submit</label>
+            <input type="submit" name="action" id="submit" value="Đăng ký" />
+        </p>
+    </form> -->
+
+
+    <script src="js/bt21.1.js"></script>
+</body>
+
+</html>

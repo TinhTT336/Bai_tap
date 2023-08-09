@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ff9900;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #a43939;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #b82323;
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #dc1de0;
+        }
+
+        #message {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <h1>Log in</h1>
+            <form id="login">
+                <div>
+                    <label>Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <p style="color: red;" id="errMess"></p>
+
+                <div style="text-align: center;">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            const inputEmail = document.getElementById("email");
+            const inputPassword = document.getElementById("password");
+
+            document.getElementById("login").addEventListener("submit", function (e) {
+                e.preventDefault();
+                const email = inputEmail.value;
+                const password = inputPassword.value;
+
+                const users = JSON.parse(localStorage.getItem("bt3_users"));
+                const index = users.findIndex(user => user.email == email);
+                if (index != -1) {
+                    if (password != users[index].password) {
+                        errMess.innerHTML = "Mat khau khong chinh xac";
+                    } else {
+                        errMess.innerHTML = "Dang nhap thanh cong";
+                        window.location.href = "./trenlop/index.html";
+                    }
+                } else {
+                    errMess.innerHTML = "Email chua dang ky";
+                }
+                this.reset();
+            })
+
+
+
+
+
+        </script>
+
+        <!-- <script src="./js/index.js"></script> -->
+    </body>
+
+</html>

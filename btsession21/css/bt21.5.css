@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aside {
+    padding-top: 5rem;
+    padding-left: 1vw;
+    width: 19vw;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: relative;
+    gap: 1vw;
+}
+
+.admin {
+    text-align: center;
+    margin-bottom: 0.3rem;
+    border: 1px solid #8cc63f;
+    display: block;
+    padding: .5rem;
+    border-radius: 10px 10px 0 0;
+    background-color: #8cc63f;
+    color: #fff;
+}
+
+.admin>h3 {
+    padding: 0.7rem 0;
+}
+
+.admin_menu {
+    border: 1px solid #8cc63f;
+    /* padding: .5rem; */
+}
+
+.admin_menu>ul>li>a {
+    text-decoration: none;
+    color: #000;
+    /* border: 1px solid #8cc63f; */
+}
+
+.admin_menu>ul>li {
+    list-style: none;
+    padding: 0.7rem;
+    border: 1px solid #8cc63f;
+
+}
+
+/* .admin_menu>ul :nth-child(odd){
+    background:lightgrey;
+} */
+
+.admin_menu>ul>li:hover {
+    background-color: #8cc63f;
+}
+
+.admin_menu>ul>li:hover a {
+    color: #fff;
+}
+
+.cart_container {
+    width: 78vw;
+    margin: 4rem auto;
+    position: relative;
+    margin-right: 1vw;
+}
+
+.cart_container>h1 {
+    /* text-align: center; */
+    display: block;
+    color: #8cc63f;
+    border-bottom: 1px solid #8cc63f;
+    padding: 1rem 0;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: none;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 1px#e6e4e4;
+}
+
+table,
+th,
+td {
+    border-bottom: 1px solid #353535;
+}
+
+th,
+td {
+    padding: 7px 0;
+    width: 200px;
+}
+
+td {
+    font-size: medium;
+}
+
+#t-body tr:nth-child(even) {
+    background-color: #e6e4e4;
+}
+
+
+
+.btn_order>button {
+    padding: 10px;
+    background-color: #8cc63f;
+    color: #fff;
+    border: none;
+    width: 7rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.btn_order {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: right;
+}
+
+
+.btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn_delete1 {
+    padding: 10px 20px;
+    background-color: rgba(101, 31, 5, 0.666);
+
+}
+
+.btn_edit,
+.btn_read {
+    background-color: #8cc63f;
+}
+
+.btn_delete {
+    background-color: rgba(101, 31, 5, 0.666);
+}
+
+.btn_add {
+    background-color: #337ab7;
+    padding: 10px;
+}
+
+.btn_search {
+    background-color: #8cc63f;
+    padding: 10px;
+}
+
+.search_add_scope {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0 2rem;
+}
+
+#input_search {
+    padding: 10px;
+    outline: none;
+    width: 35rem;
+}
+
+input {
+    outline: none;
+}
+
+/* form_scope: cap nhat */
+#form_scope {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding-top: 100px;
+    color: #fff;
+}
+
+#form_scope>form {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #8cc63f;
+}
+
+#form_scope>form>h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#form_scope>form label {
+    display: inline-block;
+    width: 150px;
+}
+
+#form_scope>form input {
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 70%;
+}
+
+#form_scope>form .btn_add_scope {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.action_col {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+img {
+    width: 100px;
+}
+
+/* them moi */
+#form_scope1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding-top: 100px;
+    color: #fff;
+}
+
+#form_scope1>form {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #8cc63f;
+}
+
+#form_scope1>form>h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#form_scope1>form label {
+    display: inline-block;
+    width: 150px;
+}
+
+#form_scope1>form input {
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 70%;
+}
+
+#form_scope1>form .btn_add_scope {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.action_col {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
