@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 40vw;
+            margin: 10px auto;
+            border: 1px solid lightgrey;
+            padding: 20px;
+        }
+
+        h1 {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        ul {
+            padding: 0 !important;
+        }
+
+        ul li {
+            list-style: none;
+            width: 80%;
+            display: flex;
+            /* justify-content: space-between; */
+            border: 1px solid #eee;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+
+        }
+
+        ul li:nth-child(odd) {
+            background: rgba(142, 140, 140, 0.385);
+        }
+
+        input[type=text] {
+            display: block;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        button {
+            /* margin-left: 50px; */
+            /* text-align: right; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(59, 20, 20, 0.106);
+            
+        }
+
+        span {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>todos</h1>
+        <div class="todolist">
+            <form action="" id="form">
+                <input type="text" name="list" id="input_list">
+            </form>
+        </div>
+        <ul id="list">
+            <!-- <li><input type="radio" name="list1" id="list1"><span>Cong viec 1</span> <button type="button" id="btn_delete"
+                    onclick="deleteList()">&times</button></li>
+
+            <li><input type="radio" name="list1" id="list2"><span>Cong viec 2</span> <button type="button" id="btn_delete"
+                    onclick="deleteList()">&times</button></li> -->
+    </div>
+    </ul>
+
+    </div>
+
+    <script src="js/bt22.js"></script>
+</body>
+
+</html>
